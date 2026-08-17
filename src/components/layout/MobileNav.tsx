@@ -41,7 +41,7 @@ export function MobileNav() {
       </button>
 
       {open ? (
-        <div id="mobile-menu" className="fixed inset-x-0 bottom-0 top-[var(--header-h,64px)] z-40 bg-warm-50">
+        <div id="mobile-menu" className="absolute inset-x-0 top-full z-40 h-[calc(100dvh-4rem)] bg-warm-50">
           <nav className="flex h-full flex-col overflow-y-auto px-5 pb-10 pt-4" aria-label="Main">
             <ul className="divide-y divide-warm-300 border-y border-warm-300">
               {nav.map((item) => (
