@@ -1,0 +1,10 @@
+<!--
+  PLACEHOLDER FAVICON — replace with the approved Vulpine fox mark.
+  Drop the approved SVG here (or an icon.png at 512x512) and Next.js picks it
+  up automatically. Also add apple-icon.png (180x180) for iOS.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#0E1012"/>
+  <text x="32" y="45" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="38" font-weight="700" fill="#FAF8F5" text-anchor="middle">V</text>
+  <circle cx="50" cy="44" r="3.5" fill="#F97316"/>
+</svg>
