@@ -17,6 +17,17 @@ const categories = [
 ];
 
 export function Hero() {
+  const suppliedCategories = (
+    <>
+      <span className="font-mono text-[0.625rem] uppercase tracking-label text-vulpine">Supplied</span>
+      {categories.map((category) => (
+        <span key={category} className="font-mono text-[0.625rem] uppercase tracking-label text-warm-400">
+          {category}
+        </span>
+      ))}
+    </>
+  );
+
   return (
     <section className="on-dark relative overflow-hidden bg-graphite-900 text-warm-50">
       <div className="sheet-grid absolute inset-0" aria-hidden="true" />
@@ -61,15 +72,18 @@ export function Hero() {
         </div>
       </Container>
 
-      <div className="relative border-t border-white/10">
-        <Container className="flex flex-wrap items-center gap-x-6 gap-y-2 py-4">
-          <span className="font-mono text-[0.625rem] uppercase tracking-label text-vulpine">Supplied</span>
-          {categories.map((category) => (
-            <span key={category} className="font-mono text-[0.625rem] uppercase tracking-label text-warm-400">
-              {category}
-            </span>
-          ))}
-        </Container>
+      <div className="relative overflow-hidden border-t border-white/10">
+        <div className="supplied-marquee flex w-max py-4">
+          <div className="flex min-w-[100vw] shrink-0 items-center gap-6 px-5 sm:px-8 lg:px-12">
+            {suppliedCategories}
+          </div>
+          <div
+            className="flex min-w-[100vw] shrink-0 items-center gap-6 px-5 sm:px-8 lg:px-12"
+            aria-hidden="true"
+          >
+            {suppliedCategories}
+          </div>
+        </div>
       </div>
     </section>
   );

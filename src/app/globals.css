@@ -77,6 +77,15 @@
 
   .rule-t { @apply border-t border-warm-300; }
   .rule-t-dark { @apply border-t border-white/10; }
+
+  .supplied-marquee {
+    animation: supplied-marquee 8s linear infinite;
+  }
+}
+
+@keyframes supplied-marquee {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
 }
 
 @media (prefers-reduced-motion: reduce) {
